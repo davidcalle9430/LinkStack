@@ -1,0 +1,18 @@
+<Doctype !html>
+<html lang = "es">
+<head>
+
+    <meta charset= "utf-8">
+	<title>LinkStack</title>
+    {% load staticfiles %}
+	<link rel="stylesheet" href="https://drive.google.com/file/d/0B5dXK3LgG5-PaDNVLUlrVy1xNFk/view?usp=sharing" >
+</head>
+<body class="fondo">
+     <h1> Crea tu Stack </h1>
+     <form action= "/" method = "post">
+         {%csrf_token%}
+	     {{form}}
+	     <input type= "submit"/>
+     </form>	
+</body>
+</html>
