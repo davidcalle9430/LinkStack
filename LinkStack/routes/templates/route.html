@@ -19,7 +19,7 @@
 	{% for l in links reversed %} 
         <li>    
             <div class= "link">
-            {% if l.link.find("//") == -1  %}
+            {% if "//" in l.link  %}
 	           <a href="{{l.link}}" target="_blank"> {{l.link}} </a>
             {% else %}
              <a href="//{{l.link}}" target="_blank"> {{l.link}} </a>
